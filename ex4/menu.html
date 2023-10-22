@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquina Registradora </title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>Calculadora de Troco</h1>
+
+    <label for="precoProduto">Preço unitário do produto (R$):</label>
+    <input type="number" step="0.01" id="precoProduto">
+
+    <br>
+    <br>
+
+    <label for="quantidade">Quantidade comprada:</label>
+    <input type="number" id="quantidade">
+
+    <br>
+    <br>
+
+    <label for="dinheiroRecebido">Dinheiro recebido (R$):</label>
+    <input type="number" step="0.01" id="dinheiroRecebido">
+
+    <br>
+    <br>
+
+    <button onclick="calcularTroco()">Calcular Troco</button>
+
+    <br>
+    <br>
+
+    <p>TROCO: R$<span id="resultadoTroco">-</span></p>
+    
+</body>
+</html>
