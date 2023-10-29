@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de unidade</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>Conversor de Temperatura</h1>
+    <label for="escala">Você vai digitar a temperatura em qual escala (C/F)?</label>
+    <select id="escala" onchange="mostrarEntrada()">
+        <option value="C">Celsius (C)</option>
+        <option value="F">Fahrenheit (F)</option>
+    </select>
+    <br>
+    <br>
+    <div id="entrada-celsius">
+        <label for="temp-celsius">Digite a temperatura em Celsius:</label>
+        <input type="number" step="0.01" id="temp-celsius">
+    </div>
+    <div id="entrada-fahrenheit" style="display: none;">
+        <label for="temp-fahrenheit">Digite a temperatura em Fahrenheit:</label>
+        <input type="number" step="0.01" id="temp-fahrenheit">
+    </div>
+    <br>
+    <br>
+    <button onclick="converterTemperatura()">Converter</button>
+    <p id="resultado"></p>
+</body>
+</html>
