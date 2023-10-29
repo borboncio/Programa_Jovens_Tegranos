@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troco</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1>Calculadora de Troco</h1>
+    <label for="preco">Preço unitário do produto:</label>
+    <input type="number" step="0.01" id="preco">
+
+    <br>
+    <br>
+
+    <label for="quantidade">Quantidade comprada:</label>
+    <input type="number" id="quantidade">
+
+    <br>
+    <br>
+
+    <label for="dinheiro">Dinheiro recebido:</label>
+    <input type="number" step="0.01" id="dinheiro">
+    
+    <br>
+    <br>
+
+    <button onclick="calcularTroco()">Calcular Troco</button>
+    <p id="resultado"></p>
+    
+</body>
+</html>
